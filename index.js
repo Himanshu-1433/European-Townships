@@ -89,6 +89,6 @@ function display(array) {
     InputsOfUser.style.display = "none";
     result.style.display = "block";
     let Showtxt = document.getElementById('Showtxt');
-    Showtxt.innerHTML +=  "Home Ammount :: Time : " + TotalTime + " accent colour : " + accColor + " regular colour : " + normalColor + "<br><br><br>";
+    Showtxt.innerHTML +=  "Home Ammount :: Time : " + TotalTime + " :: accent colour : " + accColor + " :: regular colour : " + normalColor + "<br><br><br>";
     console.log(TotalTime + " " + accColor + " " + normalColor);
 }
