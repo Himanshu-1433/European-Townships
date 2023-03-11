@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>European-Townships</title>
     <style>
-        #board
-        {
+        #board {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;    
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
         }
 
         #board .towns {
@@ -25,7 +26,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;       
+            align-items: center;
         }
 
         #houses .townHouse {
@@ -35,39 +36,38 @@
             font-size: 20px;
         }
 
-         #createTowns {
-            width: 50%;
+        #createHomes {
+            width: 100%;
+            text-align: center;
             padding: 20px;
             font-size: 18px;
-            margin: 0% 10%;
         }
 
-        #submitHouse {
-            width: 50%;
-            padding: 20px;
-            font-size: 18px;
-            margin: 0% 10%;
+        #Showtxt {
+            font-size: 1.5em;;
+            margin: 30px;
         }
     </style>
 </head>
+
 <body>
-    <div id="Header">
-        <label for="number">Enter Number Of Township</label>
-        <input type="number" id="NumTown">
-    </div>
-    <div>
-        <div id="board">
-
+    <div id="InputsOfUser">
+        <div id="Header">
+            <label for="number">Enter Number Of Towns</label>
+            <input type="number" id="NumTown">
+            <button id="submit">Click</button>
         </div>
-        <button type="submit" id="createTowns">Submit</button>
+        <div>
+            <div id="board">
+            </div>
+            <button type="submit" id="createHomes">Submit</button>
+        </div>
     </div>
-    <div>
-        <div id="houses">
-
-        </div>        
-        <button type="submit" id="submitHouse">Submit</button>
+    <div id="result">
+        <h1>Your Answer is : </h1>
+        <p id="Showtxt"></p>
     </div>
-    <button id="submit">Click</button>
     <script src="./index.js"></script>
 </body>
+
 </html>
