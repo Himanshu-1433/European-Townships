@@ -5,8 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>European-Townships</title>
+    <style>
+        #board
+        {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;    
+        }
+
+        #board .townShip {
+            margin: 10px;
+            width: 50%;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        #board #submitTownship {
+            width: 50%;
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="Header">
+        <label for="number">Enter Number Of Township</label>
+        <input type="number" id="townShipCount">
+    </div>
+    <form id="board">
+        <button id="submitTownship">Submit</button>
+    </form>
+    <button id="submit">Click</button>
+    <script src="./index.js"></script>
 </body>
 </html>
