@@ -8,21 +8,41 @@
     <style>
         #board
         {
-            
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;    
         }
 
-        #board .townShip {
+        #board .towns {
             margin: 10px;
             width: 50%;
             padding: 20px;
             font-size: 20px;
         }
 
-         #submitTownship {
+        #houses {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;       
+        }
+
+        #houses .townHouse {
+            margin: 10px;
+            width: 50%;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+         #createTowns {
+            width: 50%;
+            padding: 20px;
+            font-size: 18px;
+            margin: 0% 10%;
+        }
+
+        #submitHouse {
             width: 50%;
             padding: 20px;
             font-size: 18px;
@@ -33,13 +53,19 @@
 <body>
     <div id="Header">
         <label for="number">Enter Number Of Township</label>
-        <input type="number" id="townShipCount">
+        <input type="number" id="NumTown">
     </div>
     <div>
         <div id="board">
 
         </div>
-        <button type="submit" id="submitTownship">Submit</button>
+        <button type="submit" id="createTowns">Submit</button>
+    </div>
+    <div>
+        <div id="houses">
+
+        </div>        
+        <button type="submit" id="submitHouse">Submit</button>
     </div>
     <button id="submit">Click</button>
     <script src="./index.js"></script>
