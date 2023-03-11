@@ -17,9 +17,8 @@ submit.addEventListener("click" , () => {
                 let input = document.createElement("input");
                 input.classList.add("townShip");
                 input.type = "number";
-                input.required;
                 input.placeholder = "Enter Number of House (TownShip of " + (x+1) + ")";                
-                board.prepend(input);
+                board.appendChild(input);
             }   
 
             let townShip = document.getElementsByClassName("townShip");
