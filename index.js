@@ -15,6 +15,7 @@ submit.addEventListener("click", () => {
             // create Towns
             for (let x = 0; x < numOfTown; x++) {
                 let div = document.createElement("div");
+                div.classList.add("col-12");
                 let label = document.createElement("label");
                 label.innerHTML = "How many House in (Town " + (x + 1) + ")";
                 let input = document.createElement("input");
@@ -89,6 +90,6 @@ function display(array) {
     InputsOfUser.style.display = "none";
     result.style.display = "block";
     let Showtxt = document.getElementById('Showtxt');
-    Showtxt.innerHTML +=  "Home Ammount :: Time : " + TotalTime + " :: accent colour : " + accColor + " :: regular colour : " + normalColor + "<br><br><br>";
+    Showtxt.innerHTML +=  "Home Ammount :: Time  <br>" + TotalTime + " :: accent colour  <br>" + accColor + " :: regular colour <br>" + normalColor + "<br><br><br>";
     console.log(TotalTime + " " + accColor + " " + normalColor);
 }
